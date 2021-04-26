@@ -1,0 +1,63 @@
+
+<DOCTYPE! html>
+<html lang="en"> 
+   <head> 
+      <script> 
+         //function to display value 
+         function dis(val) 
+         { 
+             document.getElementById("result").value+=val 
+         } 
+           
+         //function to evaluates the digit and return result 
+         function solve() 
+         { 
+             let x = document.getElementById("result").value 
+             let y = eval(x) 
+             document.getElementById("result").value = y 
+         } 
+           
+         //function to clear the display 
+         function clr() 
+         { 
+             document.getElementById("result").value = "" 
+         } 
+      </script> 
+   </head> 
+ 
+   <body> 
+      <div class = title >Calculator</div> 
+      <table border="3"> 
+         <tr> 
+            <td colspan="6"><input type="text" id="result"/></td> 
+           
+            
+         </tr> 
+         <tr> 
+           
+            <td><input type="button" value="1" onclick="dis('1')"/> </td> 
+            <td><input type="button" value="2" onclick="dis('2')"/> </td> 
+            <td><input type="button" value="3" onclick="dis('3')"/> </td> 
+            <td><input type="button" value="+" onclick="dis('+')"/> </td>
+         </tr> 
+         <tr> 
+            <td><input type="button" value="4" onclick="dis('4')"/> </td> 
+            <td><input type="button" value="5" onclick="dis('5')"/> </td> 
+            <td><input type="button" value="6" onclick="dis('6')"/> </td> 
+            <td><input type="button" value="-" onclick="dis('-')"/> </td> 
+         </tr> 
+         <tr> 
+        
+           
+         </tr> 
+         <tr> 
+            <td><input type="button" value="." onclick="dis('.')"/> </td> 
+            <td><input type="button" value="0" onclick="dis('0')"/> </td> 
+           
+            <td><input type="button" value="=" onclick="solve()"/> </td> 
+           
+            <td><input type="button" value="c" onclick="clr()"/> </td> 
+         </tr> 
+      </table> 
+   </body> 
+</html>    
