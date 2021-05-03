@@ -1,0 +1,27 @@
+.menu-bar{
+	min-height: 9%;
+	background-color: #007284;
+	
+}
+.menu-bar img {
+	width: 160px;
+}
+.nav-link {
+	color: #fff;
+}
+.nav-link:hover {
+	color: #000;
+}
+.banner {
+	color: #007284;
+}
+.banner img{
+	width: 70%;
+}
+.info {
+    margin: 25% auto;
+	font-size:30px;
+	}
+.info img{
+	width:160px;
+}
